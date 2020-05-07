@@ -1,0 +1,507 @@
+*{
+margin: 0;
+    padding: 0;
+}
+body{
+    direction: ltr;
+}
+/*nav bar*/
+nav{
+    width: 100%;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0);
+
+}
+.clear-fix{
+    clear: both;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+nav #nav-brand{
+    display: block;
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+
+}
+nav #nav-brand:hover{
+    color: white;
+}
+nav ul{
+    list-style-type: none;
+    width: 70%;
+    float:right;
+    text-align: right;
+    box-sizing: border-box;
+
+}
+nav button{
+    display: none;
+}
+nav ul li{
+   /* display: inline-block;*/
+    float: right;
+    padding: 0 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    line-height: 1rem;
+}
+nav ul li a:hover{
+    color: white;
+}
+/*header*/
+header{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgba(99,77,66,0.5),rgba(99,77,66,0.5)), url("../img/bg-masthead.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+header .row{
+    padding: 200px 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header h1{
+    color: white;
+    font-family: 'Merriweather Light Italic', arial;
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding: 0 150px;
+    box-sizing: border-box;
+
+}
+.underline {
+    display: inline-block;
+    width: 4.5%;
+    height: 2px;
+    border: 1px solid #f4623a;
+    background-color:#f4623a;
+    margin: 0 auto;
+    margin: 30px 0;
+}
+header p{
+    color: rgba(255,2555,255,0.7);
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    padding: 0 220px;
+    line-height: 1.5rem;
+
+}
+header #heading-link{
+    text-decoration: none;
+    background-color:#f24516;
+    border: 1px solid #ee3e0d;
+    color: #fff;
+    padding: 25px 35px;
+    box-sizing: border-box;
+    border-radius: 35px;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    font-family: 'Merriweather Light Italic', arial;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: inline-block;
+    word-spacing: 2px;
+}
+header #heading-link:hover{
+    background:#d6370c;
+    border-color: #ee3e0d;
+}
+/*information section*/
+section#section-info{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f4623a;
+    padding: 150px 0;
+
+}
+section#section-info .row{
+    text-align: center;
+}
+section#section-info h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Merriweather Light Italic', arial;
+    line-height: 1.2rem;
+}
+section#section-info .underline{
+    display: inline-block;
+    width: 5%;
+    border: 2px solid white;
+    background-color: white;
+    margin: 0 auto;
+    margin: 30px 0;
+}
+section #info-p{
+    color: rgba(255,255,255,0.5);
+    font-family: 'Merriweather', serif;
+font-weight: 400;
+    font-size: 1rem;
+    padding: 0 210px;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+section#section-info a {
+    display: inline-block;
+    margin: 30px 0;
+    text-decoration: none;
+    font-family: 'Merriweather Light Italic', arial;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 25px 45px;
+    box-sizing: border-box;
+    background-color:#f8f9fa ;
+    color: #212529;
+    border-radius: 50px;
+}
+section#section-info a:hover{
+    background-color:#e2e6ea;
+
+}
+/*services section*/
+section#services{
+    width: 100%;
+}
+section#services .row{
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+
+}
+section#services h2{
+    font-family: 'Merriweather Light Italic', arial;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+
+}
+section .service-items{
+    width: 100%;
+    margin-bottom: 200px;
+}
+section .service-items .item{
+    /*display: inline-block;*/
+    float: left;
+    /*
+    width: 24%;
+    */
+    width: 25%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+section .service-items .item .fas{
+    color: #f4623a;
+    font-size: 4rem;
+}
+section .service-items .item h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: 'Merriweather Light Italic', arial;
+    font-weight: 500;
+    line-height: 1.2;
+}
+section .service-items .item p{
+    color:#6c757d;
+    font-family: 'Merriweather', serif;
+    line-height: 22px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/*section portfoli */
+section#portfoli{
+    width: 100%;
+
+}
+section#portfoli ul{
+    width: 100%;
+    list-style-type: none;
+}
+section#portfoli ul li{
+    width: 33.3%;
+    float: left;
+    cursor: pointer;
+    /*
+    display: inline-block;
+    */
+    box-sizing: border-box;
+    position: relative;
+    line-height: 0;
+}
+section#portfoli ul li img{
+    width: 100%;
+}
+section#portfoli ul li .port-hover{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    text-align: center;
+    line-height: normal;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /*padding: 100px 0;*/
+    padding: 20% 0;
+    background-color: rgba(255,60,30,0.7);
+    display: none;
+
+}
+section#portfoli ul li .port-hover h4{
+    font-family: 'Merriweather Light Italic', arial;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase ;
+}
+section#portfoli ul li .port-hover h2{
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+}
+section#portfoli ul li:hover .port-hover{
+    display: block;
+}
+/*Download section*/
+section#download{
+    width: 100%;
+    background-color:#343a40 ;
+    padding: 150px 0;
+}
+section#download .row{
+    text-align: center;
+}
+section#download h2{
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: white;
+}
+section#download #download-link{
+    display: inline-block;
+    margin-top: 40px;
+    font-family: 'Merriweather', serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: #f8f9fa;
+    text-decoration: none;
+    color: #212529;
+    padding: 25px 35px ;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+section#download #download-link:hover{
+    background: #e2e6ea;
+}
+/*contact-us section*/
+section#contact{
+    width: 100%;
+}
+section#contact .row{
+    text-align: center;
+    padding: 100px 0;
+}
+section#contact h2{
+    font-family: 'Merriweather Light Italic', arial;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 500;
+
+
+}
+section#contact p{
+    font-family: 'Merriweather', serif;
+    color: #888888;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 210px;
+    box-sizing: border-box;
+}
+section#contact ul{
+    width: 100%;
+    list-style-type: none;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+section#contact ul li{
+    display: inline-block;
+    width: 35%;
+}
+section#contact ul li p{
+    padding: 0;
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+section#contact ul li .fas{
+    font-size: 3rem;
+    color:#6c757d ;
+}
+/*section#contact ul li:last-child{
+    color: #f4623a;
+}*/
+/*footer*/
+footer{
+    padding: 50px 0;
+    box-sizing: border-box;
+    background: #f8f9fa;
+    text-align:center ;
+}
+footer p{
+    font-family: 'Merriweather', serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #6c757d;
+
+}
+/*@media querise*/
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    /*section services*/
+    .container{
+        width: 90%;
+    }
+}
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    /*nav bar*/
+    nav{
+        position: relative;
+
+    }
+    nav #nav-brand{
+        color: black;
+        width: 50%;
+        margin-bottom: 25px;
+        box-sizing: border-box;
+
+    }
+    nav #nav-brand:hover{
+        color: black;
+    }
+    nav ul{
+        display: none;
+    }
+    nav button{
+        display: block;
+        float: right;
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        background: white;
+        color: lightgray;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+    /*header*/
+    .container{
+        width: 95%;
+    }
+
+    header .row{
+        padding: 100px 0;
+    }
+    header h1{
+        font-size: 2.25rem;
+        padding: 0 ;
+    }
+    header p{
+        padding: 0
+    }
+    /*information section*/
+    .underline {
+        width: 4.5%;
+        height: 0.3px;
+    }
+    section #info-p{
+        padding: 0 ;
+
+    }
+    section#section-info{
+        padding: 100px 0;
+        box-sizing: border-box;
+
+    }
+    /*section services*/
+    section .service-items .item{
+        float: left;
+        width: 48%;
+    }
+    /*section portfolio*/
+    section#portfoli ul li{
+        width: 50%;
+        float: left;
+
+    }
+/*section#contact*/
+    section#contact p{
+        padding: 0;
+    }
+    section#contact ul li{
+        width: 100%;
+    }
+
+}
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    /*section services*/
+    section .service-items .item {
+        float: none;
+        width: 100%;
+    }
+    /*section services*/
+
+
+
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+/*section portfolio*/
+    section#portfoli ul li{
+        width: 100%;
+        float: none;
+
+    }
+}
+
+
+
+
+
+
+
